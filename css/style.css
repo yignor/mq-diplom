@@ -1,0 +1,591 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(/fonts/OpenSans-Bold.woff);
+  font-weight: 800;
+  font-style: bold;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+}
+
+button {
+  padding: 0%;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-image::before {
+  content: "";
+  opacity: 0.9;
+  background-color: #0A0E35;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.logo {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header_slogan {
+  max-width: 100%;
+}
+
+.header_slogan {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.button-app {
+  background-color: #5D3DB2;
+  border-style: hidden;
+  color: #fff;
+}
+
+.button-app_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.button-app_text {
+  text-transform: uppercase;
+}
+
+.icon-ios {
+  background-image: url(/svg/apple_logo_black.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_android-app {
+  background-image: url(/svg/google-play.svg);
+  background-repeat: no-repeat;
+}
+
+.button-app_text-bold {
+  font-weight: bold;
+}
+
+/* end header */
+
+.section-1,
+.section-2 {
+  position: relative;
+}
+
+.section-1 h1 {
+  color: #e7e7e7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-1_items .section-1_item:nth-child(2) {
+  background-color: #f5f4f9;
+}
+
+.athletes_block .section-1_items .section-1_item:nth-child(3) {
+  background-color: #5e42b0;
+}
+
+.players_block .section-1_items .section-1_item:nth-child(3) {
+  background-color: #090A36;
+}
+
+.section-1_items .section-1_item:nth-child(3) p {
+  color: white;
+}
+
+.section-1_items h2,
+h2.section-2_title {
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
+
+.athletes_block .section-1__img,
+.players_block .section-1__img {
+  position: absolute;
+  z-index: 1;
+}
+
+.section-1_title {
+  display: flex;
+}
+
+.section-1_title-number {
+  font-weight: bold;
+}
+
+.players_block .section-1_item:last-child .section-1_title-number {
+  color: #8765dd;
+}
+
+.section-1_title-number:after {
+  content: "";
+  display: block;
+  border: 1px solid #5e42b0;
+  background-color: #5e42b0;
+}
+
+.section-1_item:last-child .section-1_title-number:after {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  background-color: white;
+}
+
+/* end .section-1_block */
+
+.section-2_post {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e42b0;
+
+}
+
+.section-2_post-number {
+  color: white;
+  font-weight: bold;
+}
+
+.section-2_post-number:after {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  background-color: white;
+  opacity: .3;
+}
+
+/* end .section-2_block */
+
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.logo-app {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #50329c 0%, #5e3db3 50%, #7751db 100%);
+}
+
+.footer_text {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .bg-image {
+    background-image: url(/images/football_767.jpg);
+    height: 177.5vw;
+  }
+
+  .container {
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+  }
+
+  .logo img {
+    margin-top: 10.31vw;
+    width: 41.56vw;
+  }
+
+  .header_slogan {
+    margin-top: 42.81vw;
+  }
+
+  .header_slogan h1,
+  .header_slogan h2 {
+    font-size: 8.75vw;
+    letter-spacing: 0.4375vw;
+  }
+
+  .header_slogan>h1 {
+    margin-top: 9.68vw;
+    padding-left: 14.6vw;
+    line-height: 1.2;
+  }
+
+  .header_section-button {
+    margin-top: 28.1vw;
+  }
+
+  .button-app {
+    width: 100%;
+    height: 10.9vw;
+    border-radius: 5.3vw;
+    text-align: left;
+  }
+
+  .button-app:nth-child(even) {
+    margin-top: 5vw;
+  }
+
+  .button-app_wrapper {
+    padding-left: 25.31vw;
+  }
+
+  .icon-ios {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .icon_android-app {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .button-app_text {
+    margin-left: 3.1vw;
+    font-size: 2.5vw;
+  }
+
+  /* end header */
+
+  .section-1 header {
+    padding-top: 7.5vw;
+  }
+
+  .section-1 h1 {
+    font-size: 15.6vw;
+  }
+
+  .section-1_img {
+    top: 25vw;
+    left: 21.87vw;
+  }
+
+  .athletes_block .section-1__img {
+    top: 25vw;
+    left: 21.87vw;
+    width: 60vw;
+  }
+
+  .players_block .section-1__img {
+    left: 2.81vw;
+    top: 25vw;
+  }
+
+  .section-1_items .section-1_item:nth-child(1) {
+    background-color: #fafafa;
+  }
+
+  .section-1_items .section-1_item:nth-child(1) {
+    margin-top: 76.25vw;
+    padding-top: 26.25vw;
+  }
+
+  .section-1_items .section-1_item p {
+    margin: 8.75vw 0 0 0;
+    line-height: 5.6vw;
+  }
+
+  .section-1_items h2,
+  h2.section-2_title {
+    font-size: 7.18vw;
+  }
+
+  .section-1_items p {
+    font-size: 4.68vw;
+  }
+
+  .section-1_item {
+    padding-bottom: 17.18vw;
+  }
+
+  .section-1_item:not(:first-child) {
+    padding-top: 18.75vw;
+  }
+
+  .section-1_title-number {
+    font-size: 4.375vw;
+    margin-right: 3.125vw;
+  }
+
+  .section-1_title-number:after {
+    height: 1.25vw;
+    width: 4.6875vw;
+    border-radius: 0.46vw;
+  }
+
+  .section-1_item:last-child .section-1_title-number:after {
+    height: 1.25vw;
+    width: 4.6875vw;
+    border-radius: 0.46vw;
+  }
+
+  /* end .section-1_block */
+
+  .section-2__img {
+    width: 100vw;
+  }
+
+  .section-2_post {
+    width: 21.87vw;
+    height: 21.87vw;
+    top: 91.56vw;
+    left: 6.25vw;
+  }
+
+  .section-2_post-number {
+    font-size: 4.36vw;
+  }
+
+  .section-2_post-number:after {
+    height: 1.25vw;
+    border-radius: 0.46vw;
+  }
+
+  .section-2_title {
+    margin-top: 7.81vw;
+  }
+
+  .section-2_text {
+    margin: 7.5vw 0 25vw 0;
+    font-size: 5vw;
+  }
+
+  /* end .section-2_block */
+
+  footer.bg-image {
+    background-image: url(/images/game_767.jpg);
+    height: 177.5vw;
+  }
+
+  .logo-app {
+    margin-top: 30.9vw;
+    width: 22.5vw;
+    height: 23.1vw;
+    border-radius: 4.68vw;
+  }
+
+  .logo-app img {
+    width: 18.1vw;
+  }
+
+  .footer_text {
+    margin-top: 18.43vw;
+  }
+
+  .footer_text h2 {
+    font-size: 10vw;
+    letter-spacing: 0.5vw;
+  }
+
+  .footer_text h3 {
+    margin-top: 4.37vw;
+    font-size: 4.37vw;
+    letter-spacing: 0.21vw;
+  }
+
+  .footer_section-button {
+    margin-top: 24.06vw;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .bg-image {
+    background-image: url(/images/football_1280.jpg);
+    height: 125vw;
+  }
+
+  .container {
+    padding-left: 3.9vw;
+    padding-right: 3.9vw;
+  }
+
+  .logo img {
+    margin-top: 5.2vw;
+    width: 26.69vw;
+  }
+
+  .header_slogan {
+    margin-top: 23.56vw;
+  }
+
+  .header_slogan h1,
+  .header_slogan h2 {
+    font-size: 8.33vw;
+    /* letter-spacing: 1vw;  ????? */
+  }
+
+  .header_slogan>h2 {
+    padding-left: 11.06vw;
+  }
+
+  .header_slogan>h1 {
+    margin-top: 3.9vw;
+    padding-left: 25vw;
+    /* line-height: 2.6vw; ??? */
+  }
+
+  .header_section-button {
+    margin-top: 40.6vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-app {
+    width: 40.36vw;
+    height: 10.02vw;
+    border-radius: 5.3vw;
+    text-align: left;
+  }
+
+  .button-app:nth-child(even) {
+    margin-left: 4.03vw;
+  }
+
+  .header_section-button .button-app:first-child .button-app_wrapper{
+    padding-left: 5.33vw;
+  }
+
+  .header_section-button .button-app:last-child .button-app_wrapper{
+    padding-left: 7.42vw;
+  }
+
+  .icon-ios {
+    width: 5.72vw;
+    height: 5.72vw;
+  }
+
+  .icon_android-app {
+    width: 5.33vw;
+    height: 5.85vw;
+  }
+
+  .button-app_text {
+    margin-left: 3.51vw;
+    font-size: 1.82vw;
+  }
+
+    /* end header */
+
+    .section-1 header {
+      padding-top: 11.19vw;
+    }
+  
+    .section-1 h1 {
+      font-size: 10.41vw;
+    }
+  
+    .section-1_img {
+      top: 25vw;
+      left: 21.87vw;
+    }
+
+    .athletes_block .container {
+      padding-left: 38vw;
+    }
+  
+    .athletes_block .section-1__img {
+      top: 25vw;
+      left: 21.87vw;
+      width: 60vw;
+    }
+  
+    .players_block .section-1__img {
+      left: 2.81vw;
+      top: 25vw;
+    }
+  
+    .section-1_items .section-1_item:nth-child(1) {
+      margin-top: 8.07vw;
+    }
+  
+    .section-1_items .section-1_item p {
+      margin: 4.29vw 0 0 0;
+      line-height: 3.64vw;
+    }
+  
+    .section-1_items h2,
+    h2.section-2_title {
+      font-size: 4.16vw;
+    }
+  
+    .section-1_items p {
+      font-size: 1.82vw;
+      letter-spacing: 0.1vw;
+    }
+  
+    .section-1_item {
+      padding-bottom: 4.42vw;
+    }
+  
+    .section-1_item:not(:first-child) {
+      padding-top: 18.75vw;
+    }
+  
+    .section-1_title-number {
+      font-size: 2.34vw;
+      margin-right: 1.3vw;
+    }
+  
+    .section-1_title-number:after {
+      height: 0.65vw;
+      width: 2.86vw;
+      border-radius: 0.46vw;
+    }
+  
+    .section-1_item:last-child .section-1_title-number:after {
+      height: 0.65vw;
+      width: 2.86vw;
+      border-radius: 0.46vw;
+    }
+  
+    /* end .section-1_block */
+
+}
+
+
